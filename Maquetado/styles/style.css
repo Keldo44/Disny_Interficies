@@ -2,6 +2,27 @@ body {
   margin: 0;
 }
 
+h3 {
+  background: linear-gradient(90deg, #20FF20, #502204);
+  width: fit-content;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #030303;
+  margin: 0;
+  line-height: normal;
+}
+
 header {
   background-color: #d3d3d3;
   display: flex;
@@ -115,10 +136,20 @@ footer > div div a:hover {
   bottom: -70px;
 }
 
-.products img {
-  width: 1920px;
-  height: 1920px;
+.news .news-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+.news .news-items img {
+  width: calc(33.3333333333% - 13.3333333333px);
+  height: 500px;
+  object-fit: cover;
+}
+.news .news-items img:first-child {
+  width: 100%;
+}
+
 .products div {
   display: flex;
   flex-direction: row;
@@ -128,8 +159,34 @@ footer > div div a:hover {
 }
 .products div img {
   width: calc(33.3333333333% - 13.3333333333px);
-  height: auto;
+  height: 500px;
   object-fit: cover;
+}
+
+.contacte form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+.contacte form input, .contacte form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.contacte form button {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .contacte form {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
