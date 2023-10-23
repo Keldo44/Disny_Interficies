@@ -169,23 +169,44 @@ footer{
 
 .contacte{
     form {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
         padding: 20px;
-        border: 1px solid #ccc;
-        input, textarea {
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+        width: 75%;
+        margin: 0 auto;
+        input:not(:last-child),textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
-            
+            border: none;
+            &:nth-child(2),&:first-child{
+                width: calc(50% - 35px);
+            }
+            background-color: #f8f8f8;
         }
-        button {
+        span{
+            display: flex;
+            width: 100%;
+            
+            
+            input{
+                width: fit-content !important;
+                border: 1.5px solid #c4c4c4;
+            }
+            label{
+                width: 100%;
+                margin: auto 0;
+                color:#c4c4c4
+            }
+        }
+        input[type="submit"] {
             background-color: #000;
             color: #fff;
             font-weight: bold;
-            padding: 10px;
-            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: transparent;
             cursor: pointer;
           }
     }
@@ -195,3 +216,4 @@ footer{
         }
     }
 }
+

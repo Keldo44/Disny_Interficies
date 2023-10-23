@@ -164,23 +164,43 @@ footer > div div a:hover {
 }
 
 .contacte form {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 75%;
+  margin: 0 auto;
 }
-.contacte form input, .contacte form textarea {
+.contacte form input:not(:last-child), .contacte form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
+  background-color: #f8f8f8;
 }
-.contacte form button {
+.contacte form input:not(:last-child):nth-child(2), .contacte form input:not(:last-child):first-child, .contacte form textarea:nth-child(2), .contacte form textarea:first-child {
+  width: calc(50% - 35px);
+}
+.contacte form span {
+  display: flex;
+  width: 100%;
+}
+.contacte form span input {
+  width: fit-content !important;
+  border: 1.5px solid #c4c4c4;
+}
+.contacte form span label {
+  width: 100%;
+  margin: auto 0;
+  color: #c4c4c4;
+}
+.contacte form input[type=submit] {
   background-color: #000;
   color: #fff;
   font-weight: bold;
-  padding: 10px;
-  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: transparent;
   cursor: pointer;
 }
 @media (max-width: 500px) {
