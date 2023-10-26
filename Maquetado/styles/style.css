@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+}
+
+h3 {
+  background: linear-gradient(90deg, #20FF20, #502204);
+  width: fit-content;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #030303;
+  margin: 0;
+  line-height: normal;
+}
+
+header {
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+header img {
+  width: 150px;
+  height: auto;
+  height: fit-content;
+  object-fit: cover;
+  display: flex;
+  margin: auto 0;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header ul li {
+  width: fit-content;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+a:hover {
+  color: rgb(20, 20, 20);
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #030303;
+  color: #f8f8f8;
+}
+footer img, footer ul {
+  width: 25%;
+}
+footer ul {
+  list-style: none;
+  padding: 25px 0;
+  margin: 0;
+}
+footer > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #f8f8f8;
+}
+footer > div p {
+  margin: 10px 0;
+}
+footer > div div {
+  height: fit-content;
+  margin: 10px 0;
+}
+footer > div div a:first-child {
+  padding-right: 25px;
+}
+footer > div div a {
+  color: #f8f8f8;
+}
+footer > div div a:hover {
+  color: white;
+}
+
+.main-page .main-slider {
+  position: relative;
+  height: 500px;
+}
+.main-page .main-slider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  position: absolute;
+}
+.main-page .main-slider img:first-child {
+  z-index: 2;
+}
+.main-page div.textbox {
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  z-index: 3;
+}
+.main-page div.textbox div {
+  width: 75%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: #4d4d4d;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: #f8f8f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-page div.textbox img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  right: 10%;
+  bottom: -70px;
+}
+
+.news .news-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.news .news-items img {
+  width: calc(33.3333333333% - 13.3333333333px);
+  height: 500px;
+  object-fit: cover;
+}
+.news .news-items img:first-child {
+  width: 100%;
+}
+
+.products div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.products div img {
+  width: calc(33.3333333333% - 13.3333333333px);
+  object-fit: cover;
+  padding: 20px 20px 100px;
+  /* border: 1px solid black; */
+  height: 500px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacte form {
+  padding: 20px;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 75%;
+  margin: 0 auto;
+}
+.contacte form input:not(:last-child), .contacte form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f8f8f8;
+}
+.contacte form input:not(:last-child):nth-child(2), .contacte form input:not(:last-child):first-child, .contacte form textarea:nth-child(2), .contacte form textarea:first-child {
+  width: calc(50% - 35px);
+}
+.contacte form span {
+  display: flex;
+  width: 100%;
+}
+.contacte form span input {
+  width: fit-content !important;
+  border: 1.5px solid #c4c4c4;
+}
+.contacte form span label {
+  width: 100%;
+  margin: auto 0;
+  color: #c4c4c4;
+}
+.contacte form input[type=submit] {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: transparent;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .contacte form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
