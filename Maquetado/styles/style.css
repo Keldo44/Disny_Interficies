@@ -135,44 +135,13 @@ footer > div div a:hover {
   right: 10%;
   bottom: -70px;
 }
-
-.news .news-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.news .news-items img {
-  width: calc(33.3333333333% - 13.3333333333px);
-  height: 500px;
-  object-fit: cover;
-}
-.news .news-items img:first-child {
-  width: 100%;
-}
-
-.products div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-.products div img {
-  width: calc(33.3333333333% - 13.3333333333px);
-  object-fit: cover;
-  padding: 20px 20px 100px;
-  /* border: 1px solid black; */
-  height: 500px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-}
-
 .contacte form {
-  padding: 20px;
+  // padding: 20px;
   border: none;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 .contacte form input:not(:last-child), .contacte form textarea {
@@ -197,11 +166,14 @@ footer > div div a:hover {
   margin: auto 0;
   color: #c4c4c4;
 }
+label[for="tc"]{
+  margin-left: 5px !important;
+}
 .contacte form input[type=submit] {
   background-color: #000;
   color: #fff;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 5px;
   border: transparent;
   cursor: pointer;
