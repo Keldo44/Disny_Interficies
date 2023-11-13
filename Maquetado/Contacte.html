@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <img src="img.png">
+        <img src="assets/logo.png">
         <ul>
-            <li>Inicio</li>
-            <li>Juegos</li>
-            <li>Productos</li>
-            <li>Noticies</li>
-            <li>Contacte</li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Series.html">Series</a></li>
+            <li><a href="Peliculas.html">Peliculas</a></li>
+            <li><a href="Novedades.html">Novedades</a></li>
+            <li class="active"><a href="Contacte.html">Contacte</a></li>
+            <input type="text" placeholder="Search">
+            <li><a href="Login.html">Login</a></li>
         </ul>
     </header>
     <div class="contacte">
         <h3>Contacte</h3>
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet</p>
         <form>
             <input type="text" placeholder="Nombre">
             <input type="text" placeholder="Apellido">
             <input type="text" placeholder="email">
             <input type="number" placeholder="telefon">
             <input type="text" placeholder="assumpte">
-            <input type="text" placeholder="Missatge">
+            <textarea placeholder="Missatge"></textarea>
+            <span>
+                <input type="checkbox" name="tc" placeholder="assumpte">
+                <label for="tc">He leído y acepto los <a>Terminos y condiciones</a></label>
+            </span>
+
             <input type="submit">
         </form>
     </div>
     <footer>
-        <img src="img.png">
+        <img src="assets/logo.png">
         <ul>
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum </li>
@@ -39,7 +49,7 @@
             <li>C. Lorem nº X</li>
         </ul>
         <div>
-            <p>Diseño Web  Ivan Ortiga 2023</p>
+            <p>Diseño Web Ivan Ortiga 2023</p>
             <div>
                 <a href="/">Terminos y condiciones</a>
                 <a href="/">Política de privacidad</a>
@@ -47,4 +57,5 @@
         </div>
     </footer>
 </body>
+
 </html>
