@@ -1,0 +1,37 @@
+<div class="container">
+  <label for="filtro">Filtrar por direccion: </label>
+  <br>
+  <select [(ngModel)]="filtro" name="filtro">
+    <option></option>
+    <option *ngFor="let lugar of obtenerLugares()" [value]="lugar">{{lugar}}</option>
+  </select>
+
+  <h1>Proximos Eventos</h1>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let evento of obtenerEventosActuales()">
+      <h1>{{ evento.titulo }}</h1>
+      <h2>{{ evento.artista }}</h2>
+      <h3>{{ evento.fecha | date }} - {{ evento.fecha | date: 'HH:MM' }}h</h3>
+      <h3>{{ evento.direccion }}</h3>
+      <h2>{{ (evento.precio != 0) ? (evento.precio | currency) : "Gratis !!" }}</h2>
+    </div>
+
+    <h3 *ngIf="obtenerEventosActuales().length == 0">Sin eventos por mostrar</h3>
+  </div>
+
+  <h1>Eventos Pasados</h1>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let evento of obtenerEventosPasados()">
+      <h1>{{ evento.titulo }}</h1>
+      <h2>{{ evento.artista }}</h2>
+      <h3>{{ evento.fecha | date }} - {{ evento.fecha | date: 'HH:MM' }}h</h3>
+      <h3>{{ evento.direccion }}</h3>
+      <h2>{{ (evento.precio != 0) ? (evento.precio | currency) : "Gratis !!" }}</h2>
+    </div>
+
+    <h3 *ngIf="obtenerEventosPasados().length == 0">Sin eventos por mostrar</h3>
+  </div>
+
+</div>
