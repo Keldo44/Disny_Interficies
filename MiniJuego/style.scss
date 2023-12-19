@@ -1,0 +1,40 @@
+body>div>div{
+    margin: auto;
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    font-size: 55px;
+    width: 504px;
+    height: 504px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap:1px;
+    button{
+        margin: auto;
+        border: none;
+        background: none;
+        font-size: inherit;
+        color: rgb(0,0,0,0.6);
+        width: 100px;
+        /* aspect-ratio: 1 / 1; */
+        height: 100px;
+        /* padding: 25px; */
+        //margin: auto;
+        /* position: absolute; */
+        text-align: center;
+        background: #aaffaa;
+        transition: 140ms;
+        //border: 1px solid rgba(0,0,0,0.15);
+        
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+    }
+}
+
+

@@ -1,0 +1,60 @@
+#winPane{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255,0.8);
+  z-index: 99;
+}
+#winPane div{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#winPane div button{
+  width: 500px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #11ecc4; /* Blue color for the button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 140ms;
+}
+body > div > div {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 55px;
+  width: 504px;
+  height: 504px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+body > div > div button:not(#winPane button) {
+  margin: auto;
+  border: none;
+  background: none;
+  font-size: inherit;
+  color: rgba(0, 0, 0, 0.6);
+  width: 100px;
+  /* aspect-ratio: 1 / 1; */
+  height: 100px;
+  /* padding: 25px; */
+  /* position: absolute; */
+  text-align: center;
+  background: #aaffaa;
+  transition: 140ms;
+}
+body > div > div button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=style.css.map */
