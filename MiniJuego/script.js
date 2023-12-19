@@ -33,12 +33,14 @@ function fillAndUpdateButtons() {
                 
                 
             } else if (count <= 74) {
-                button.style.background = "#ffffff";
-                button.style.color = "#ffffff";
-                button.textContent ="";
-                // Remove the click event listener using the named function reference
-                button.removeEventListener("click", handleClick);
-                count++;
+                if (points == button.textContent) {
+                    button.style.background = "#ffffff";
+                    button.style.color = "#ffffff";
+                    button.textContent ="";
+                    // Remove the click event listener using the named function reference
+                    button.removeEventListener("click", handleClick);
+                    count++;
+                } 
             } else {
                 if (buttons && buttons.forEach) {
                     console.log("You win!");
